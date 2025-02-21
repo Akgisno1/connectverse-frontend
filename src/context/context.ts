@@ -1,11 +1,9 @@
+import { User } from "@/lib/User";
 import { createContext } from "react";
-import { User } from "@/lib/User"; // Adjust the import path if necessary
 
-export interface AuthContextType {
+interface AuthContextType {
   currentUser: User | null;
-  login: (userData: Pick<User, "email" | "password">) => Promise<void>;
-  register: (userData: User) => Promise<void>;
-  logout: () => void;
+  updateUser: (data: User | null) => void;
 }
 
 export const AuthContext = createContext<AuthContextType | undefined>(

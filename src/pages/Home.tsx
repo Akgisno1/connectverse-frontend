@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="h-full flex flex-col items-center justify-center bg-gray-100">
       <h1 className="text-4xl mb-6">Welcome to MelodyVerse</h1>
       <p className="text-lg mb-6 text-gray-700">
         Your favorite music platform!
